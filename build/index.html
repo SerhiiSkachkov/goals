@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>new</title><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <!-- header begin-->
+      <header class="header">
+        <div class="header-box"><a class="header-logo" href="/"></a>
+          <div class="header-controls"><a class="btn btn-transparent" href="/"><span class="icon-ic-info"></span>About</a></div>
+        </div>
+      </header>
+      <!-- header end-->
+      <!-- main-content begin-->
+      <main class="content">
+        <section class="goals">
+          <div class="container">
+            <div class="goals-panel">
+              <h1 class="goals-title">My Goals</h1>
+              <div class="goals-controls">
+                <button class="btn btn-primary">Create a Goal</button>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="tab-nav">
+                <ul class="tab-nav-list js-tab">
+                  <li><a class="active" href="#tab-1">All 12</a></li>
+                  <li><a href="#tab-2">Incomplete 6</a></li>
+                  <li><a href="#tab-3">Completed 6</a></li>
+                </ul>
+              </div>
+              <div class="tab-controls"><a class="btn btn-primary" href="/">Create a Goal</a></div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-content-item active" id="tab-1">
+                <div class="table-responcive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Goal Name</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Priority</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Learn Rack</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Learn Trailblazer Lorem Ipsum Dolor Sit Amet</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Metaprogramming</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-warning"></span>Medium</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>OOP in Ruby</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-down text-info"></span>Low</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Ruby gems</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Learn Rake</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-warning"></span>Medium</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn Rack</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Ruby Refactoring Vel Ne Saperet Convenire</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn RSpec</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-warning"></span>Medium</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn RSpec</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-down text-info"></span>Low</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn Trailblazer</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Metaprogramming</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-content-item" id="tab-2">
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Goal Name</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Priority</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Learn Rack</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Learn Trailblazer Lorem Ipsum Dolor Sit Amet</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Metaprogramming</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-warning"></span>Medium</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>OOP in Ruby</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-down text-info"></span>Low</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Ruby gems</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><span class="icon-ic-checkbox-normal"></span>Learn Rake</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-warning"></span>Medium</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-content-item" id="tab-3">
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Goal Name</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Priority</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn Rack</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Ruby Refactoring Vel Ne Saperet Convenire</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn RSpec</td>
+                        <td>12.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-warning"></span>Medium</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn RSpec</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-down text-info"></span>Low</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Learn Trailblazer</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                      <tr class="compleate">
+                        <td scope="row"><span class="icon-ic-checkbox-active"></span>Metaprogramming</td>
+                        <td> 10.08.2019</td>
+                        <td><span class="icon-ic-priority-arrow-up text-danger"></span>High</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- main-content end-->
+      <!-- footer begin-->
+      <footer class="footer"></footer>
+      <!-- footer end-->
+    </div>
+    <!-- scripts begin-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <!-- scripts end-->
+  </body>
+</html>

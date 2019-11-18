@@ -1,0 +1,252 @@
+section.goals
+    .container
+        .goals-panel
+            h1.goals-title My Goals
+            .goals-controls
+                button.btn.btn-primary Create a Goal
+
+        .tab
+            .tab-nav
+                ul.tab-nav-list.js-tab
+                    li
+                        a.active(href='#tab-1') All 12
+                    li
+                        a(href='#tab-2') Incomplete 6
+                    li
+                        a(href='#tab-3') Completed 6
+
+            .tab-controls
+                a.btn.btn-primary(href="/") Create a Goal
+
+        .tab-content
+            #tab-1.tab-content-item.active
+                .table-responcive
+                    table.table
+                        thead
+                            tr
+                                th(scope='col') Goal Name
+                                th(scope='col') Due Date
+                                th(scope='col') Priority
+                        tbody
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Learn Rack
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Learn Trailblazer Lorem Ipsum Dolor Sit Amet
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Metaprogramming
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-warning
+                                    |Medium
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | OOP in Ruby
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-down.text-info
+                                    | Low
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Ruby gems
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Learn Rake
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-warning
+                                    | Medium
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn Rack
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Ruby Refactoring Vel Ne Saperet Convenire
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn RSpec
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-warning
+                                    | Medium
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn RSpec
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-down.text-info
+                                    | Low
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn Trailblazer
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Metaprogramming
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+            #tab-2.tab-content-item
+                .table-wrap
+                    table.table
+                        thead
+                            tr
+                                th(scope='col') Goal Name
+                                th(scope='col') Due Date
+                                th(scope='col') Priority
+                        tbody
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Learn Rack
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Learn Trailblazer Lorem Ipsum Dolor Sit Amet
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Metaprogramming
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-warning
+                                    | Medium
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | OOP in Ruby
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-down.text-info
+                                    | Low
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Ruby gems
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+                            tr
+                                td(scope='row')
+                                    span.icon-ic-checkbox-normal
+                                    | Learn Rake
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-warning
+                                    | Medium
+
+            #tab-3.tab-content-item
+                .table-wrap
+                    table.table
+                        thead
+                            tr
+                                th(scope='col') Goal Name
+                                th(scope='col') Due Date
+                                th(scope='col') Priority
+                        tbody
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn Rack
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Ruby Refactoring Vel Ne Saperet Convenire
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn RSpec
+                                td 12.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-warning
+                                    | Medium
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn RSpec
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-down.text-info
+                                    | Low
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Learn Trailblazer
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High
+
+                            tr.compleate
+                                td(scope='row')
+                                    span.icon-ic-checkbox-active
+                                    | Metaprogramming
+                                td  10.08.2019
+                                td
+                                    span.icon-ic-priority-arrow-up.text-danger
+                                    | High

@@ -1,0 +1,95 @@
+.table
+    width: 100%
+    border-radius: 4px
+    overflow: hidden
+    min-width: 600px
+    width: 100%
+    border-collapse: collapse
+    background-color: $white
+    &-responcive
+        overflow-x: auto
+        border-radius: 1rem
+    thead
+        th
+            padding: 2.2rem 1rem 2.1rem
+            font-weight: 500
+            border-bottom: 3px solid  $light-gray
+            &:not(:first-child)
+                min-width: 120px
+    tbody
+        tr
+            &.compleate
+                opacity: 0.6
+        td
+            padding: 1.2rem 1rem 1.2rem 1rem
+            position: relative
+            vertical-align: baseline
+            span[class^="icon-"]
+                width: 2.4rem
+                height: 2.4rem
+            &:after
+                content: ''
+                position: absolute
+                bottom: -2px
+                left: 0px
+                height: 1px
+                width: 100%
+                background-color: $light-gray
+            &:first-child,
+            &:last-child
+                &:after
+                    width: calc(100% - 1rem)
+            &:first-child
+                span[class^="icon-"]
+                    font-size: 2.4rem
+                    vertical-align: sub
+                    margin-right: 0.5rem
+                    color: $light-gray
+                &:after
+                    right: 0px
+                    left: auto
+            &:last-child
+                white-space: pre
+                span[class^="icon-"]
+                    font-size: 2.4rem
+                    vertical-align: sub
+                    margin-right: 0.5rem
+
+@media(min-width: 768px)
+  .table
+      thead
+          th
+              &:first-child
+                  padding-left:  2rem
+              &:last-child
+                  padding-right:  2rem
+      tbody
+          td
+              &:first-child
+                  padding-left:  2rem
+              &:last-child
+                  padding-right:  4rem
+              &:first-child,
+              &:last-child
+                  &:after
+                      width: calc(100% - 2rem)
+
+
+@media(min-width: 1280px)
+    .table
+        thead
+            th
+                &:first-child
+                    padding-left:  4rem
+                &:last-child
+                    padding-right:  4rem
+        tbody
+            td
+                &:first-child
+                    padding-left:  4rem
+                &:last-child
+                    padding-right:  4rem
+                &:first-child,
+                &:last-child
+                    &:after
+                        width: calc(100% - 4rem)

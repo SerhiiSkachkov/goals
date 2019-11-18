@@ -1,0 +1,73 @@
+.tab
+    background-color: $white
+    border-radius: 1rem
+    padding: 0rem 1rem
+    display: flex
+    margin-bottom: 1.6rem
+    box-shadow: 0 0 3px rgba(0,0,0,0.2)
+    &-nav
+        width: 100%
+        &-list
+            display: flex
+            width: 100%
+            flex-flow: wrap
+            li
+                margin: 0rem 1rem
+                flex-grow: 1
+                text-align: center
+                &:first-child
+                    margin-left: 0px
+                a
+                    font-size: 1.6rem
+                    padding: 2.2rem 0rem
+                    color: $dark-gray
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute
+                        height: 3px
+                        width: 0%
+                        background-color: $primary
+                        bottom: 0px
+                        left: 50%
+                        transition: 0.3s
+                    &.active
+                        color: $primary
+                        &:before
+                            width: 100%
+                            left: 0
+                    &:hover
+                        color: $primary
+                        &:before
+                          width: 100%
+                          left: 0
+    &-controls
+      display: none
+    &-content
+        box-shadow: 0 0 3px rgba(0,0,0,0.2)
+        border-radius: 1rem
+        &-item
+            display: none
+            &.active
+                display: block
+
+
+@media(min-width: 768px)
+  .tab
+      margin-bottom: 2rem
+      align-items: center
+      &-nav
+          &-list
+              padding: 0rem 1rem
+              align-items: center
+              justify-content: flex-start
+              li
+                  margin: 0rem 1rem
+                  flex-grow: 0
+      &-controls
+          display: block
+          padding: 0rem 1rem
+
+@media(min-width: 1280px)
+  .tab
+      padding: 0rem 3rem
